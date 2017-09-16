@@ -12,4 +12,20 @@ char str_as_arr1[] = "123";
 char str_as_arr2[] = "123";
 ```
 ***
-`char * ptr = new char [3];` vs `char ptr[3];` vs `std::array<char, 3> ptr;`
+```
+void f1()
+{
+    std::array<long long, 2> p1;
+    long long p2[2];
+    long long * p3 = new long long [2];
+}
+```
+vs
+```
+void f2()
+{
+    std::array<long long, 2> p1{};
+    long long p2[2]{};
+    long long * p3 = new long long [2]{};
+}
+```
