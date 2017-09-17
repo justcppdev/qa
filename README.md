@@ -29,3 +29,5 @@ void f2()
     long long * p3 = new long long [2]{};
 }
 ```
+***
+`(i++ < 2) || (i == 3)` vs `(i++ < 2) + (i == 3)`
